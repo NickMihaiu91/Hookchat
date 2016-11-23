@@ -34,29 +34,27 @@ Actual app available at: www.finchzee.com
 
 ###Home
 ---
-![Home](screenshots/mobile/home.png?raw=true "Home")
+<img src="screenshots/mobile/home.png" width="300">
 
 ###Q&A
 ---
-![Q&A](screenshots/mobile/qa.png?raw=true "Q&A")
+<img src="screenshots/mobile/qa.png" width="300">
 
 ###Q&A - matched answers
 ---
-![Q&A - matched answers](screenshots/mobile/qaresponse.png?raw=true "Q&A - matched answers")
+<img src="screenshots/mobile/qaresponse.png" width="300">
 
 ###It's a match
 ---
-![It's a match](screenshots/mobile/home.png?raw=true "It's a match")
-
+<img src="screenshots/mobile/match.png" width="300">
 
 ###Get email
 ---
-![Get email](screenshots/mobile/getemail.png?raw=true "Get email")
-
+<img src="screenshots/mobile/getemail.png" width="300">
 
 ###Share
 ---
-![Share](screenshots/mobile/share.png?raw=true "Share")
+<img src="screenshots/mobile/share.png" width="300">
 
 **Built with:**
  - Angular
