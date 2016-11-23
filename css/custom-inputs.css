@@ -1,0 +1,160 @@
+.ac-radio label::before {
+    border-radius: 50%;
+}
+
+.ac-custom {
+    padding: 0 3em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+    .ac-custom h2 {
+        font-weight: 300;
+        padding: 0 0 0.5em;
+        margin: 0 0 30px;
+    }
+
+    .ac-custom ul,
+    .ac-custom ol {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 800px;
+        text-align: left;
+    }
+
+    .ac-custom li {
+        margin: 0 auto;
+        padding: 1.2em 0;
+        position: relative;
+    }
+
+    .ac-custom label {
+        display: inline-block;
+        position: relative;
+        font-size: 25px;
+        padding: 0 0 0 80px;
+        vertical-align: top;
+        color: rgba(244,225,225,0.4);
+        cursor: pointer;
+        -moz-transition: color 0.3s;
+        -o-transition: color 0.3s;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s;
+    }
+
+        .ac-custom input[type="checkbox"],
+        .ac-custom input[type="radio"],
+        .ac-custom label::before {
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            left: 0;
+            margin-top: -25px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+    .ac-custom input[type="checkbox"],
+    .ac-custom input[type="radio"] {
+        opacity: 0;
+        -webkit-appearance: none;
+        display: inline-block;
+        vertical-align: middle;
+        z-index: 100;
+    }
+
+    .ac-custom label::before {
+        content: '';
+        border: 4px solid #fff;
+        -moz-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+
+    .ac-custom input[type="checkbox"]:checked + label,
+    .ac-custom input[type="radio"]:checked + label {
+        color: #fff;
+    }
+
+        .ac-custom input[type="checkbox"]:checked + label::before,
+        .ac-custom input[type="radio"]:checked + label::before {
+            opacity: 0.8;
+        }
+
+    /* General SVG and path styles */
+
+    .ac-custom svg {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        margin-top: -20px;
+        left: 5px;
+        pointer-events: none;
+    }
+
+        .ac-custom svg path {
+            stroke: #fdfcd3;
+            stroke-width: 13px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+
+/* Specific input, SVG and path styles */
+
+/* Circle */
+.ac-circle input[type="checkbox"],
+.ac-circle input[type="radio"],
+.ac-circle label::before {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    left: 10px;
+    position: absolute;
+}
+
+.ac-circle label::before {
+    background-color: #fff;
+    border: none;
+}
+
+.ac-circle svg {
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    left: -10px;
+}
+
+    .ac-circle svg path {
+        stroke-width: 5px;
+    }
+
+/* Box Fill */
+.ac-boxfill svg path {
+    stroke-width: 8px;
+}
+
+/* Swirl */
+.ac-swirl svg path {
+    stroke-width: 8px;
+}
+
+
+@media only screen and (max-device-width : 780px) {
+    .ac-custom {
+        padding: 0;
+    }
+
+        .ac-custom h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .ac-custom label {
+            font-size: 18px;
+        }
+}
